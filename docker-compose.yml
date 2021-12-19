@@ -1,0 +1,9 @@
+# Just making this easier to compile this amazing Docker Container
+---
+version: "3.8"
+
+services:
+  mysql-buckup:
+    build:
+      context: .
+    image: fixedbit/mysql-buckup
