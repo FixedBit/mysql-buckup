@@ -19,6 +19,7 @@ ADD backup.sh /backup.sh
 ADD run.sh /run.sh
 RUN chmod +x /backup.sh && chmod +x /run.sh && chown root:root /usr/bin/rclone && chmod 755 /usr/bin/rclone
 RUN chown root:root /usr/bin/rclone && chmod 755 /usr/bin/rclone
+RUN mkdir /backup
 
 USER root
 
